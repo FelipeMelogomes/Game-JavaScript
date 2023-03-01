@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/mosquito.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="imagens/game.png" class="img-fluid" />
+                </div>
+
+                <div class="d-flex justify-content-center mb-3">
+                    <select class="form-control" id="nivel">
+                        <option value=""> Selecione o nível </option>
+                        <option value="facil">Fácil</option>
+                        <option value="normal">Normal</option>
+                        <option value="medio">Médio</option>
+                        <option value="dificil">Difícil</option>
+                        <option value="hard">Hard</option>
+                        <option value="very_hard">Supremo</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()"
+                        onclick="changeBackgroundImage()">Iniciar Jogo </button>
+                </div>
+
+                <audio id="musica" src="/audio/musica.mp3" autoplay loop></audio>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jogo.js"></script>
+</body>
+
+</html>
