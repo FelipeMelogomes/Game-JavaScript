@@ -109,8 +109,8 @@ const cronometro = iniciarCronometro(tempoLimite, finalizarJogo);
 let mosquitosMortos = 0;
 
 function removerMosquito() {
-  document.getElementById('contagem-mosquitos').innerHTML =
-    parseInt(document.getElementById('contagem-mosquitos').innerHTML) + 1;
+  document.getElementById('mosquitosPainel').innerHTML =
+    parseInt(document.getElementById('mosquitosPainel').innerHTML) + 1;
   const mosquito = document.getElementById('mosquito');
 
   if (mosquito) {

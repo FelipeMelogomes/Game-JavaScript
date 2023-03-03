@@ -11,28 +11,36 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
+
+
+/* MOSQUITOS TAMANHOS
 
 /* pequeno */
 .mosquito1 {
-  width: 50px;
-  height: 50px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 /* medio */
 .mosquito2 {
-  width: 70px;
-  height: 70px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 /* grande */
 .mosquito3 {
-  width: 90px;
-  height: 90px;
+  width: 4.375rem;
+  height: 4.375rem;
 }
+
+
+
+/* FORMATACOES PAINEL DE VIDA E CONTADOR DE MOSQUITOS */
 
 .ladoA {
   transform: scaleX(1);
@@ -64,27 +72,11 @@ body {
   border-top: solid 1px #fff;
   background-color: #fff;
   opacity: 0.5;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: 900;
   border-radius: 5%;
+  flex-basis: 50%;
 }
-
-
-
-@media (max-width: 768px) {
-  .mosquitosPainel {
-    width: 20%;
-    padding: 0.5vw;
-    position: static;
-    left: auto;
-    bottom: auto;
-    font-size: 1.5vw;
-    border-radius: 5%;
-  }
-
-}
-
-
 
 .vidas {
   font-size: 4vw;
@@ -102,14 +94,46 @@ body {
   font-style: oblique;
 }
 
-/* Media queries para ajustar o estilo de acordo com a largura da tela */
-@media (max-width: 550px) {
+
+
+/* MEDIA QUERIES MOBILE */
+
+/* MOBILE 550 px */
+@media (max-width: 550) {
 
   body {
     background-image: url(/imagens/mapa1.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+  }
+
+
+  .mosquitosPainel {
+    position: absolute;
+    width: 15%;
+    padding: 0.5vw;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.5;
+    font-size: 1.5vw;
+    font-weight: 900;
+    border-radius: 5%;
+
+  }
+}
+
+/* TABLE 768PX */
+@media (max-width: 768px) {
+
+  body {
+    background-image: url(/imagens/mapa1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .mosquitosPainel {
@@ -121,21 +145,10 @@ body {
     font-size: 1.5vw;
     border-radius: 5%;
   }
-
-
-  .painel {
-    max-width: 10%;
-    padding: 1vw;
-    flex-wrap: nowrap;
-  }
-
-  .vidas,
-  .cronometro {
-    flex-basis: auto;
-    margin-bottom: 0;
-  }
 }
 
+
+/* TABLET 900PX */
 @media (max-width: 900px) {
 
   body {
@@ -158,7 +171,9 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+
+/* Desktop 1000px */
+@media (max-width: 1200px) {
   body {
     background-image: url(/imagens/mapa1.jpg);
     background-repeat: no-repeat;
@@ -168,5 +183,9 @@ body {
 
   .painel {
     max-width: 15%;
+  }
+
+  .mosquitosPainel {
+    border-radius: 5%;
   }
 }
