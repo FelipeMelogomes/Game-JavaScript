@@ -2,7 +2,9 @@
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Boostrap 4 -->
@@ -19,7 +21,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <div class="d-flex justify-content-center">
                     <img src="imagens/game_over.png" />
                 </div>
@@ -27,7 +29,7 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <audio id="musica" src="/audio/musica4.mp3" autoplay loop></audio>
                 <div class="d-flex justify-content-center">
                     <button type="button" class="btn btn-dark btn-lg"
@@ -36,13 +38,15 @@
             </div>
         </div>
 
-        <script>
-            window.onclick = function () {
-                const musica = document.getElementById("musica");
-                musica.play();
-            }
+    </div>
 
-        </script>
+    <script>
+        window.onclick = function () {
+            const musica = document.getElementById("musica");
+            musica.play();
+        }
+    </script>
+
 </body>
 
 </html>
