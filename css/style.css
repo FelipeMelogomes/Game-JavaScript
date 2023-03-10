@@ -10,7 +10,7 @@ body {
   background-image: url(/imagens/mapa1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -135,15 +135,6 @@ img {
 
 /* MOBILE 550 px */
 @media (max-width: 550) {
-
-  body {
-    background-image: url(/imagens/mapa1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-  }
-
-
   .mosquitosPainel {
     width: 15%;
     padding: 0.5vw;
@@ -163,15 +154,6 @@ img {
 
 /* TABLE 768PX */
 @media (max-width: 768px) {
-
-  body {
-    background-image: url(/imagens/mapa1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-
   .mosquitosPainel {
     width: 20%;
     padding: 0.5vw;
@@ -188,14 +170,6 @@ img {
 
 /* TABLET 900PX */
 @media (max-width: 900px) {
-
-  body {
-    background-image: url(/imagens/mapa1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-  }
-
   .mosquitosPainel {
     font-style: oblique;
   }
@@ -217,13 +191,6 @@ img {
 
 /* Desktop 1000px */
 @media (max-width: 1200px) {
-
-  body {
-    background-image: url(/imagens/mapa1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-  }
 
   .painel {
     max-width: 15%;
